@@ -3,14 +3,14 @@
 
 ## Setup:
 
-### Backend
+### Backend (Ruby on Rails API, ruby-3.2.3)
 ```bash
 cd backend
 mv example.env .env  # rename example.env to .env and provide your GROQ_API_KEY in .env
 bundle install && rails server
 ```
 
-### Frontend
+### Frontend (React)
 ```bash
 cd frontend
 npm install && npm start
