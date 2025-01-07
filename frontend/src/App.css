@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content closer to the top */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 20px; /* Add some padding at the top for spacing */
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 20px; /* Add margin to create space below the header */
+}
+
+h1 {
+  font-size: 1.5rem; /* Make the text "Recipe Generator" smaller */
+  margin-bottom: 10px; /* Add spacing below the header */
+}
+
+.form-container {
+  width: 30%;
+  padding: 10px;
+  margin-top: 0; /* Remove additional spacing */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  font-size: 0.9rem; /* Make input text smaller */
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 5px;
+  font-size: 0.9rem; /* Make button text smaller */
+}
+
+.result-container {
+  width: 65%; /* Width for the results section */
+  height: 700px; /* Set the fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  font-size: 0.85rem; /* Make text smaller */
+  background-color: #1c1f25; /* Background for contrast */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 0; /* Align to the top */
+  text-align: left; /* Align text to the left */
+}
+
+pre {
+  white-space: pre-wrap; /* Wrap text for better readability */
+  word-wrap: break-word;
+}
